@@ -1,0 +1,20 @@
+- description: ''
+  executionEnabled: true
+  id: 044ab68f-0fba-4bfa-99e2-832416c34d10
+  loglevel: INFO
+  name: test job
+  options:
+  - name: password
+    required: true
+    secure: true
+  scheduleEnabled: true
+  sequence:
+    commands:
+    - args: -kK
+      interpreterArgsQuoted: false
+      scriptInterpreter: ansible
+      scriptfile: playbook.yml
+    keepgoing: false
+    strategy: node-first
+  uuid: 044ab68f-0fba-4bfa-99e2-832416c34d10
+
